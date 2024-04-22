@@ -8,15 +8,36 @@ fn main() {
     //         assert_ne!(prime % i,0);
     //     }
     // }
-    let matrix = [
-        [101, 102, 103], // <-- the comment makes rustfmt add a newline
-        [201, 202, 203],
-        [301, 302, 303],
-    ];
+    // let matrix = [
+    //     [101, 102, 103], // <-- the comment makes rustfmt add a newline
+    //     [201, 202, 203],
+    //     [301, 302, 303],
+    // ];
 
-    println!("matrix: {:#?}", matrix);
-    let transposed = arrays::transpose(matrix);
-    println!("transposed: {:#?}", transposed);
+    // println!("matrix: {:#?}", matrix);
+    // let transposed = arrays::transpose(matrix);
+    // println!("transposed: {:#?}", transposed);
+
+    // let a = 'A';
+    // let b = 'B';
+    // let mut r: &char = &a;
+    // println!("r: {}", *r);
+    // r = &b;
+    // println!("r: {}", *r);
+
+        // let mut point = (1,2);
+        // let x_cord = &mut point.0;
+        // *x_cord = 20;
+        // println!("point: {point:?}");
+
+
+
+    let mut a: [i32; 6] = [10, 20, 30, 40, 50, 60];
+    println!("a: {a:?}");
+
+    let s: &[i32] = &a[2..4];
+
+    println!("s: {s:?}");
 }
 
 // Macros
